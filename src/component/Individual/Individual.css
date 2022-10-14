@@ -1,0 +1,18 @@
+.separate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.whole {
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flexi {
+    display: flex;
+    justify-content: space-between;
+}
