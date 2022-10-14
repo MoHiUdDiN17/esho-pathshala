@@ -5,14 +5,15 @@ import './Question.css'
 const Question = () => {
     const post = useLoaderData();
     const eachpost = post.data;
-    const {id,questions}=eachpost;
+    const { id, name, questions } = eachpost;
+    console.log(eachpost);
     return (
         <div>
-            <h1>Quiz of JavaScript</h1>
+            <h1>Quiz of {name}</h1>
             {
-                 questions.map(ques=> <Individual
+                questions.map(ques => <Individual
                     ques={ques}
-                 ></Individual>)
+                ></Individual>)
             }
         </div>
     );

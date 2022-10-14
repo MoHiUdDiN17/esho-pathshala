@@ -42,8 +42,8 @@ const Individual = (props) => {
     return (
         <div className='container ps-5 pe-5 whole'>
             <div className='flexi'>
-                <div >
-                    <h3>Question: {question}</h3>
+                <div>
+                    <h3 className='alignment'>Question: {question}</h3>
                 </div>
                 <div>
                     <i onClick={() => answershow()} class="fa-solid fa-eye"></i>
